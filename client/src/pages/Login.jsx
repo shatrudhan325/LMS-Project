@@ -1,4 +1,3 @@
-// McgPr7oX7v1mMcbN
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -69,6 +68,7 @@ const Login = () => {
     }
     if(registerError){
       toast.error(registerError.data.message || "Signup Failed");
+     
     }
     if(loginIsSuccess && loginData){
       toast.success(loginData.message || "Login successful.");
@@ -76,6 +76,7 @@ const Login = () => {
     }
     if(loginError){ 
       toast.error(loginError.data.message || "login Failed");
+    
     }
   }, [
     loginIsLoading,
@@ -110,7 +111,7 @@ const Login = () => {
                   value={signupInput.name}
                   onChange={(e) => changeInputHandler(e, "signup")}
                   placeholder="Eg. patel"
-                  required="true"
+                  required={true}
                 />
               </div>
               <div className="space-y-1">

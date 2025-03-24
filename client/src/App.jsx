@@ -132,7 +132,10 @@ function App() {
   return (
     <main>
       <ThemeProvider>
-      <RouterProvider router={appRouter} />
+      <RouterProvider router={appRouter} future={{
+            v7_startTransition: true, // Fixes state update warning
+            v7_relativeSplatPath: true, // Fixes relative route resolution warning
+          }}/>
       </ThemeProvider>
     </main>
   );

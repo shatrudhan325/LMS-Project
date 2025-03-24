@@ -44,7 +44,7 @@ const SearchPage = () => {
           ) : isEmpty ? (
             <CourseNotFound />
           ) : (
-            data?.courses?.map((course) => <SearchResult key={course._id} course={course}/>)
+            data?.courses?.map((course) => <SearchResult key={course} course={course}/>)
           )}
         </div>
       </div>

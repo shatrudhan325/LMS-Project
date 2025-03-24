@@ -25,7 +25,6 @@ app.use(cors({
     origin:"http://localhost:5173",
     credentials:true
 }));
- 
 // apis
 app.use("/api/v1/media", mediaRoute);
 app.use("/api/v1/user", userRoute);
