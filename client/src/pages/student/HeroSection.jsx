@@ -21,7 +21,7 @@ const navigate = useNavigate();
           Find the Best Courses for You
         </h1>
         <p className="text-gray-200 dark:text-gray-400 mb-8">
-          Discover, Learn, and Upskill with our wide range of courses
+        "Unlock knowledge, enhance skills, and advance your career."
         </p>
 
         <form onSubmit={searchHandler} className="flex items-center bg-white dark:bg-gray-800 rounded-full shadow-lg overflow-hidden max-w-xl mx-auto mb-6">
